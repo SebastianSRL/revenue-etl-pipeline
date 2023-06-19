@@ -46,21 +46,6 @@ $ pip install -r requirements.txt
 
 _Note:_ We encourage you to install those inside a virtual environment.
 
-## Code Style
-
-Following a style guide keeps the code's aesthetics clean and improves readability, making contributions and code reviews easier. Automated Python code formatters make sure your codebase stays in a consistent style without any manual work on your end. If adhering to a specific style of coding is important to you, employing an automated to do that job is the obvious thing to do. This avoids bike-shedding on nitpicks during code reviews, saving you an enormous amount of time overall.
-
-We use [Black](https://black.readthedocs.io/) for automated code formatting in this project, you can run it with:
-
-```console
-$ black --line-length=88 .
-```
-
-Wanna read more about Python code style and good practices? Please see:
-
-- [The Hitchhiker’s Guide to Python: Code Style](https://docs.python-guide.org/writing/style/)
-- [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
-
 ## Tests
 
 We provide unit tests along with the project that you can run and check from your side the code meets the minimum requirements of correctness needed to approve. To run just execute:
@@ -68,8 +53,3 @@ We provide unit tests along with the project that you can run and check from you
 ```console
 $ pytest tests/
 ```
-
-If you want to learn more about testing Python code, please read:
-
-- [Effective Python Testing With Pytest](https://realpython.com/pytest-python-testing/)
-- [The Hitchhiker’s Guide to Python: Testing Your Code](https://docs.python-guide.org/writing/tests/)

@@ -5,4 +5,4 @@ ASSIGNMENT.md
 # Ignore the following folder 
 .pytest_cache/
 .vscode/
-datasets/
+dataset/

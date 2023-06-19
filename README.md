@@ -1,4 +1,4 @@
-# ELT pipeline
+# ELT Pipeline
 
 > E-Commerce Data Pipeline
 

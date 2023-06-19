@@ -1,4 +1,5 @@
-# Sprint project 01
+# ELT-pipeline
+
 > E-Commerce Data Pipeline
 
 Hi! this is the first of several projects we're going to be working on during this course.
@@ -9,7 +10,7 @@ You will be expected to finish this on your own, but you can use the available c
 
 You are working for one of the largest E-commerce sites in Latam and they requested the Data Science team to analyze company data to understand better their performance in specific metrics during the years 2016-2018.
 
-They are two main areas they want to explore, those are **Revenue** and *Delivery*.
+They are two main areas they want to explore, those are **Revenue** and _Delivery_.
 
 Basically, they would like to understand how much revenue by year they got, which were the most and less popular product categories, and the revenue by state. On the other hand, it's also important to know how well the company is delivering the products sold in time and form to their users. For example, seeing how much takes to deliver a package depends on the month and the difference between the estimated delivery date and the real one.
 
@@ -26,6 +27,7 @@ The second source is a public API: https://date.nager.at. You will use it to ret
 Because the team knows the data will come from different sources and formats, also, probably you will have to provide these kinds of reports on a monthly or annual basis. They decided to build a data pipeline (ELT) they can execute from time to time to produce the results.
 
 The technologies involved are:
+
 - Python as the main programming language
 - Pandas for consuming data from CSVs files
 - Requests for querying the public holidays API
@@ -42,7 +44,7 @@ A `requirements.txt` file is provided with all the needed Python libraries for r
 $ pip install -r requirements.txt
 ```
 
-*Note:* We encourage you to install those inside a virtual environment.
+_Note:_ We encourage you to install those inside a virtual environment.
 
 ## Code Style
 
@@ -55,6 +57,7 @@ $ black --line-length=88 .
 ```
 
 Wanna read more about Python code style and good practices? Please see:
+
 - [The Hitchhiker’s Guide to Python: Code Style](https://docs.python-guide.org/writing/style/)
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
 
@@ -67,6 +70,6 @@ $ pytest tests/
 ```
 
 If you want to learn more about testing Python code, please read:
+
 - [Effective Python Testing With Pytest](https://realpython.com/pytest-python-testing/)
 - [The Hitchhiker’s Guide to Python: Testing Your Code](https://docs.python-guide.org/writing/tests/)
-# ELT-pipeline

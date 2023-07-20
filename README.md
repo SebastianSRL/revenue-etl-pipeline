@@ -1,4 +1,4 @@
-# ELT Pipeline
+# E-commerce Performance Analysis: Revenue and Delivery Metrics (ELT Pipeline)
 
 > E-Commerce Data Pipeline
 
@@ -53,8 +53,7 @@ The first one is a Brazilian e-commerce public dataset of orders made at the Oli
 │   ├── query_results/
 │   ├── test_extract.py
 │   └── test_transform.py
-├── ASSIGNMENT.md
-├── AnyoneAI - Sprint Project 01.ipynb
+├── workflow.ipynb
 ├── README.md
 └── requirements.txt
 ```

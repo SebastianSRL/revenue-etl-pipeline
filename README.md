@@ -2,10 +2,6 @@
 
 > E-Commerce Data Pipeline
 
-Hi! this is the first of several projects we're going to be working on during this course.
-
-You will be expected to finish this on your own, but you can use the available channels on Discord to ask questions and help others. Please read the entire notebook before starting, this will give you a better idea of what you need to accomplish.
-
 ## The Business problem
 
 You are working for one of the largest E-commerce sites in Latam and they requested the Data Science team to analyze company data to understand better their performance in specific metrics during the years 2016-2018.
@@ -16,9 +12,52 @@ Basically, they would like to understand how much revenue by year they got, whic
 
 ## About the data
 
-You will consume and use data from two sources.
+The data will be consumed and used from two sources.
 
-The first one is a Brazilian e-commerce public dataset of orders made at the Olist Store, provided as CSVs files. This is real commercial data, that has been anonymized. The dataset has information on 100k orders from 2016 to 2018 made at multiple marketplaces in Brazil. Its features allow viewing orders from multiple dimensions: from order status, price, payment, and freight performance to customer location, product attributes and finally reviews written by customers. You will find an image showing the database schema at `images/data_schema.png`. To get the dataset please download it from this [link](https://drive.google.com/file/d/1HIy4LNNQESuXUj-u_mNJTCGCRrCeSbo-/view?usp=share_link), extract the `dataset` folder from the `.zip` file and place it into the root project folder. See `ASSIGNMENT.md`, section **Project Structure** to validate you've placed the dataset as it's needed.
+The first one is a Brazilian e-commerce public dataset of orders made at the Olist Store, provided as CSVs files. This is real commercial data, that has been anonymized. The dataset has information on 100k orders from 2016 to 2018 made at multiple marketplaces in Brazil. Its features allow viewing orders from multiple dimensions: from order status, price, payment, and freight performance to customer location, product attributes and finally reviews written by customers. You will find an image showing the database schema at `images/data_schema.png`. To get the dataset please download it from this [link](https://drive.google.com/file/d/1HIy4LNNQESuXUj-u_mNJTCGCRrCeSbo-/view?usp=share_link), extract the `dataset` folder from the `.zip` file and place it into the root project folder. See **Project Structure** to validate you've placed the dataset as it's needed.
+
+## Project Structure 
+
+```console
+├── dataset
+│   ├── olist_customers_dataset.csv
+│   ├── olist_geolocation_dataset.csv
+│   ├── olist_order_items_dataset.csv
+│   ├── olist_order_payments_dataset.csv
+│   ├── olist_order_reviews_dataset.csv
+│   ├── olist_orders_dataset.csv
+│   ├── olist_products_dataset.csv
+│   ├── olist_sellers_dataset.csv
+│   └── product_category_name_translation.csv
+├── images
+│   ├── data_schema.png
+│   ├── freight_value_weight_relationship.png
+│   └── orders_per_day_and_holidays.png
+├── queries
+│   ├── delivery_date_difference.sql
+│   ├── global_ammount_order_status.sql
+│   ├── real_vs_estimated_delivered_time.sql
+│   ├── revenue_by_month_year.sql
+│   ├── revenue_per_state.sql
+│   ├── top_10_least_revenue_categories.sql
+│   └── top_10_revenue_categories.sql
+├── src
+│   ├── __init__.py
+│   ├── config.py
+│   ├── extract.py
+│   ├── load.py
+│   ├── plots.py
+│   └── transform.py
+└── tests
+│   ├── __init__.py
+│   ├── query_results/
+│   ├── test_extract.py
+│   └── test_transform.py
+├── ASSIGNMENT.md
+├── AnyoneAI - Sprint Project 01.ipynb
+├── README.md
+└── requirements.txt
+```
 
 The second source is a public API: https://date.nager.at. You will use it to retrieve information about Brazil's Public Holidays and correlate that with certain metrics about the delivery of products.
 

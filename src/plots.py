@@ -1,9 +1,7 @@
 import matplotlib
 import matplotlib.pyplot as plt
-
 import plotly.express as px
 import seaborn as sns
-
 from pandas import DataFrame
 
 
@@ -181,7 +179,6 @@ def plot_freight_value_weight_relationship(df: DataFrame):
     """
     # TODO: plot freight value weight relationship using seaborn scatterplot.
     # Your x-axis should be weight and, y-axis freight value.
-    # raise NotImplementedError
     sns.scatterplot(data=df, x="product_weight_g", y="freight_value")
 
 
@@ -205,7 +202,6 @@ def plot_order_amount_per_day_with_holidays(df: DataFrame):
     # TODO: plot order amount per day with holidays using matplotlib.
     # Mark holidays with vertical lines.
     # Hint: use plt.axvline.
-    # raise NotImplementedError
     plt.figure(figsize=(10, 5))
     plt.plot(df.date, df.order_count, color="g")
     for date in df[df.holiday].date:

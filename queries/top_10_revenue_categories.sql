@@ -7,8 +7,7 @@
 -- delivery date should be not null.
 
 
---working
-select n.product_category_name_english as Category, count(DISTINCT order_id) as Num_order, sum(oop.payment_value) as Revenue from olist_order_items ooi
+/select n.product_category_name_english as Category, count(DISTINCT order_id) as Num_order, sum(oop.payment_value) as Revenue from olist_order_items ooi
 inner join olist_products op using(product_id)
 inner join olist_order_payments oop using(order_id)
 inner join olist_orders oo using(order_id)

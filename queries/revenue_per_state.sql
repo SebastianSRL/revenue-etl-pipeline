@@ -4,7 +4,6 @@
 -- HINT: All orders should have a delivered status and the actual delivery date 
 -- should be not null. 
 
--- working
 select c.customer_state, sum(p.payment_value) as Revenue
 from olist_customers as c, olist_orders as o, olist_order_payments as p
 where p.order_id = o.order_id and o.customer_id = c.customer_id 

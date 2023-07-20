@@ -1,7 +1,7 @@
 from typing import Dict
 
 import requests
-from pandas import DataFrame, read_csv, read_json, to_datetime
+from pandas import DataFrame, read_csv, to_datetime
 
 
 def get_public_holidays(public_holidays_url: str, year: str) -> DataFrame:
@@ -27,7 +27,7 @@ def get_public_holidays(public_holidays_url: str, year: str) -> DataFrame:
     r = requests.get(f"{public_holidays_url}/{year}/BR")
     try:
         r.raise_for_status()
-    except requests.exceptions.HTTPError as e:
+    except requests.exceptions.HTTPError:
         raise SystemExit("Error while getting public holidays")
     df = DataFrame(r.json())
     df.drop(columns=["types", "counties"], inplace=True)
